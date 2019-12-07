@@ -15,7 +15,7 @@ public class Exercise3 {
     int totalLength = s.length() + t.length();
     int maxLength = 30;
     
-    if (s.length() + t.length() > 27) {
+    if (totalLength > 27) {
       if (!forcePrint) {
         return null;
       }
@@ -24,11 +24,15 @@ public class Exercise3 {
     int numOfDots = maxLength - totalLength;
     StringBuilder sb = new StringBuilder();
     sb.append(s);
+//    String returnString = s;
     
     for (int i = 0; i < numOfDots ; i++) {
       sb.append('.');
+      
+//      returnString = returnString + ".";
     }
     
+//    returnString = returnString + t;
     sb.append(t);
     
     return sb.toString();

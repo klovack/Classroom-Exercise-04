@@ -17,6 +17,9 @@ public class Exercise4 {
     
     for (int i = 0; i < returnArray.length; i++) {
       returnArray[i] = new int[i];
+      
+      // Ini ga begitu penting
+      // Karena setiap int di inisialisasi = 0
       for (int j = 0; j < i ; j++) {
         returnArray[i][j] = random.nextInt();
       }
